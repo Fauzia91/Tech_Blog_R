@@ -1,0 +1,32 @@
+<div class="card mt-3">
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+    <p>By {{post.user.username}}</p>
+    {{#each post.comments}}
+        <div class="card mt-3">
+            <h3>{{this.text}}</h3>
+            <p>By {{this.user.username}}</p>
+        </div>
+    {{/each}}
+
+</div>
+
+
+
+
+
+
+<h3>Add Comment</h3>
+<form action="/api/post/{{post.id}}/comment/" method="POST" class="my-form">
+    <fieldset>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="body"  required>
+    </fieldset>
+
+
+    <input type="hidden" name="user_id" value="{{user.id}}">
+
+    <div>
+        <button class="btn btn-primary" type="submit">Add Comment</button>
+    </div>
+</form>
