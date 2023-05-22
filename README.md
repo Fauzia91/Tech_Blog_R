@@ -20,6 +20,8 @@ https://drive.google.com/file/d/1Wf8-aUMHdBNR8pvKihc92oe00DKpxzb6/view
 
 ### Deployed
 
+https://fauzia91.github.io/Tech_Blog_R/
+
 Go to 
 
 ### Contributing
